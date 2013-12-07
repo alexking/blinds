@@ -3,6 +3,8 @@ SmartThings Mini Blinds
 
 I'm using this github repository just to document the SmartThings project I've been working on lately – controlling my window blinds via Zigbee - in case anyone else wants to build something similar, or apply any of it to another project.
 
+https://vimeo.com/81291367
+
 I read this [article on Makezine](http://makezine.com/projects/mini-blind-minder/) while trying to find motorized blinds (because turning a handle is waaay too hard). I loved the simplicity of the mechanism, so I decided to build my own version that integrated with SmartThings (a fantastic smart home platform that allows you to connect a ton of various third party devices). 
 
 They offer a fantastic [SmartThings Arduino shield](https://shop.smartthings.com/#/products/smartthings-shield-arduino), which makes it incredibly easy to enable an arduino to connect via Zigbee. You'll also need an [Arduino Uno of some kind](https://www.sparkfun.com/products/11224). 
