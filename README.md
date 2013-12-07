@@ -1,0 +1,4 @@
+blinds
+======
+
+SmartThings Mini Blinds
