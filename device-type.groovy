@@ -1,52 +1,52 @@
 metadata {
 
-		tiles {
+	tiles {
+		
 		standardTile("switch", "device.switch", width: 2, height: 2, canChangeIcon: true, canChangeBackground: true) {
 			state "on", label: '${name}', action: "switch.off", icon: "st.switches.switch.on", backgroundColor: "#79b821"
 			state "off", label: '${name}', action: "switch.on", icon: "st.switches.switch.off", backgroundColor: "#ffffff"
 		}
-        
+		
 
 		controlTile("level", "device.level", "slider", width: 3, height: 1, canChangeIcon: false, canChangeBackground: false) {
 			state "level", action: "switch level.setLevel"
 		}     
-        
-        valueTile("humidity", "device.humidity", width: 1, height: 1) {
-        	state "default", label:'${currentValue}%'
-        }
-        
-        valueTile("illuminance", "device.illuminance", width: 1, height: 1) {
-             state "default", label: '${currentValue}%',backgroundColors:[
+		
+		valueTile("humidity", "device.humidity", width: 1, height: 1) {
+			state "default", label:'${currentValue}%'
+		}
+		
+		valueTile("illuminance", "device.illuminance", width: 1, height: 1) {
+			 state "default", label: '${currentValue}%',backgroundColors:[
 				[value: 0, color: "#000000"],
 				[value: 51, color: "#FFFFFF"],
-                [value: 60, color: "#FFFFFF"],
-                [value: 61, color: "#D5D908"]
+				[value: 60, color: "#FFFFFF"],
+				[value: 61, color: "#D5D908"]
 			]
 		}
-        
-        standardTile("close", "device.close", width: 1, height: 1, canChangeIcon: true, canChangeBackground: true) {
+		
+		standardTile("close", "device.close", width: 1, height: 1, canChangeIcon: true, canChangeBackground: true) {
 			state "default", label: 'Set 0', action: "close", icon: "st.contact.contact.closed", backgroundColor: "#ccccff"
 		}     
 
-        
+		
 		main "switch"
 		details(["switch", "humidity", "illuminance", "level", "close"])
 	}
 
 }
- 
- 
+
 
 Map parse(String description) {
- 
+
 	def value = zigbee.parse(description)?.text
-    
-    // Not super interested in ping, can we just move on? 
-    if (value == "ping" || value == " ") 
-    {
-        return
-    }
-    
+	
+	// Not super interested in ping, can we just move on? 
+	if (value == "ping" || value == " ") 
+	{
+		return
+	}
+	
 	def linkText = getLinkText(device)
 	def descriptionText = getDescriptionText(description, linkText, value)
 	def handlerName = value
@@ -65,42 +65,42 @@ Map parse(String description) {
 	if (value in ["!on","!off"])
 	{
 		result.name  = "switch"
-        result.value = value[1..-1]
-        
+		result.value = value[1..-1]
+		
 	} else if (value && value[0] == "%") {
 		result.name = "level"
-        result.value = value[1..-1]
+		result.value = value[1..-1]
 	} else if (value && value[0] == "h") {
 		result.name = "humidity";
-        result.value = value[1..-1];
-        result.unit = "%"
+		result.value = value[1..-1];
+		result.unit = "%"
 	} else if (value && value[0] == "l") {
 		result.name = "illuminance";
-        result.value = value[1..-1];
-        result.unit = "%"
-    
-    } else {
+		result.value = value[1..-1];
+		result.unit = "%"
+	
+	} else {
 		result.name = null; 
 	}
 
  
- 	if ( (value && value[0] == "%") )
-    {
-    	result.unit = "%"
-    
-    }
-    
-    createEvent(name: result.name, value: result.value)
+	if ( (value && value[0] == "%") )
+	{
+		result.unit = "%"
+	
+	}
+	
+	createEvent(name: result.name, value: result.value)
    
-    
+	
 }
  
 def poll() {
-    zigbee.smartShield(text: "poll").format()
+	zigbee.smartShield(text: "poll").format()
 }
 
 def on() {
-    zigbee.smartShield(text: "on").format()
+	zigbee.smartShield(text: "on").format()
 }
  
 def off() {
