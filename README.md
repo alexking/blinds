@@ -53,3 +53,4 @@ I hope to continue improving the project by giving it a better case, and a bette
 
 - To the [original Makezine article](http://makezine.com/projects/mini-blind-minder/) that inspired the design
 - To the [SmartThings community](http://build.smartthings.com), example code, and documentation
+- To the [Arduino.cc](http://arduino.cc) example code and documentation
