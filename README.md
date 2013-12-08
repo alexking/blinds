@@ -53,6 +53,7 @@ I hope to continue improving the project by giving it a better case, and a bette
 
 - To the [original Makezine article](http://makezine.com/projects/mini-blind-minder/) that inspired the design
 - To the [SmartThings community](http://build.smartthings.com), example code, and documentation
+- To Dianoga for the handy [icon script](http://scripts.3dgo.net/smartthings/icons/) that makes finding icons possible
 - To the [Arduino.cc](http://arduino.cc) example code and documentation
 
 These instructions and the code, are of course [provided "as is"](https://gist.github.com/alexking/7852271) `:)`
