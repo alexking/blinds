@@ -1,3 +1,11 @@
+/* 
+	Mini Blinds Arduino Code
+	========================
+
+	Based on the SmartThings Arduino sample at
+	https://gist.github.com/aurman/6546221
+*/
+
 #include <SoftwareSerial.h> 
 #include <SmartThings.h>
 #include <Servo.h> 

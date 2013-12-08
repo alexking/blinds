@@ -25,7 +25,7 @@ I also integrated the following parts I had laying around -
 Note - you probably wouldn't do poorly by following the original project more closely than I have - many of my changes actually have more to do with the parts I had available at the time (my local RadioShack isn't very well stocked). In particular, in future versions I plan to add buttons to control the blinds. I didn't have any buttons.
 
 ### Arduino Code
-The code to upload to the Arduino [is located here](arduino-code.ino) (there's some great [example code here](https://gist.github.com/aurman/6546221)). You'll need to install the following libraries -
+The code to upload to the Arduino [is located here](arduino-code.ino) (there's some great [example code here](https://gist.github.com/aurman/6546221) that its based on). You'll need to install the following libraries -
 
 - [SmartThings Arduino Library](http://build.smartthings.com/arduino/)
 - [Adafruit DHT11](https://github.com/adafruit/DHT-sensor-library) (optional, only needed if you're using the DHT11 temperature/humidity sensor)
@@ -52,4 +52,4 @@ I hope to continue improving the project by
 ### Thanks!
 
 - To the [original Makezine article](http://makezine.com/projects/mini-blind-minder/) that inspired the design
-- To the [SmartThings community](http://build.smartthings.com) 
+- To the [SmartThings community](http://build.smartthings.com), example code, and documentation

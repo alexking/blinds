@@ -1,3 +1,12 @@
+/* 
+	Mini Blinds Device Type
+	=======================
+	
+	Based on the SmartThings Arduino device type sample at
+	https://gist.github.com/aurman/6862503
+
+*/
+
 metadata {
 
 	tiles {
