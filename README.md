@@ -39,9 +39,15 @@ I'll assume that you can figure out how to hook up the individual components to 
 
 ![1](images/1.jpg)
 
-As you can see, it's an iPhone 5S box attached to the wall (I recommend mounting [Command Strips](http://www.command.com/wps/portal/3M/en_US/NACommand/Command/) or something similar to avoid damaging the wall – of course if you don't live in an apartment and you can "damage" whatever you want, I'd recommend looking into [this sort of in-blinds build](https://homeawesomation.wordpress.com/2013/02/26/automated-window-blinds-with-arduino/)!). I've cut a hole in the top, and precariously screwed the servo into the box. The servo is then connected to the blinds with a rubber band (read [step 10 of the original article](http://makezine.com/projects/mini-blind-minder/) for details on this slip clutch setup). 
+As you can see, it's an iPhone 5S box attached to the wall (I recommend mounting [Command Strips](http://www.command.com/wps/portal/3M/en_US/NACommand/Command/) or something similar to avoid damaging the wall – of course if you don't live in an apartment and you can "damage" whatever you want, I'd recommend looking into [this sort of in-blinds build](https://homeawesomation.wordpress.com/2013/02/26/automated-window-blinds-with-arduino/)!). I've cut a hole in the top, and precariously screwed the servo into the box. The servo is then connected to the blinds with a rubber band (read [step 10 of the original article](http://makezine.com/projects/mini-blind-minder/) for details on this slip clutch setup). It seems like you do want the servo to have a little play up and down, or it will run into the blind rod. 
 
+I cut another hole in the side for the photoresistor, and hot glued it in place. I added a SparkFun mini breadboard above the shields (which are mostly held there by a little tape and the USB power cable). The SmartThings Arduino shield happens to have a nice RGB led built in, so I covered the box with the plastic iPhone holder it came with, and it glows nicely at night. 
 
+![2](images/2.jpg)
+
+### What's Next?
+
+I hope to continue improving the project by 
 
 ### Thanks!
 
