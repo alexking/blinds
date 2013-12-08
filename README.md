@@ -1,7 +1,7 @@
 SmartThings Mini Blinds
 =======================
 
-I'm using this github repository just to document the SmartThings project I've been working on lately – controlling my window blinds via Zigbee - in case anyone else wants to build something similar, or apply any of it to another project.
+I'm using this github repository just to document the SmartThings project I've been working on lately – controlling my window blinds via SmartThings - in case anyone else wants to build something similar, or apply any of it to another project.
 
 I read this [article on Makezine](http://makezine.com/projects/mini-blind-minder/) while trying to find motorized blinds (because turning a handle is waaay too hard). I loved the simplicity of the mechanism, so I decided to build my own version that integrated with SmartThings (a fantastic smart home platform that allows you to connect a ton of various third party devices). 
 
@@ -47,7 +47,7 @@ I cut another hole in the side for the photoresistor, and hot glued it in place.
 
 ### What's Next?
 
-I hope to continue improving the project by 
+I hope to continue improving the project by giving it a better case, and a better drive mechanism. So far no success with 3d printing parts in elasto plastic on Shapeways (not quite elastic enough), but I'll try to keep this repo updated as changes are made. 
 
 ### Thanks!
 
