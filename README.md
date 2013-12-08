@@ -5,7 +5,7 @@ I'm using this github repository just to document the SmartThings project I've b
 
 I read this [article on Makezine](http://makezine.com/projects/mini-blind-minder/) while trying to find motorized blinds (because turning a handle is waaay too hard). I loved the simplicity of the mechanism, so I decided to build my own version that integrated with SmartThings (a fantastic smart home platform that allows you to connect a ton of various third party devices). 
 
-[![video](video.png)](https://vimeo.com/81291367)
+[![video](images/video.png)](https://vimeo.com/81291367)
 
 [View the project in action on Vimeo](https://vimeo.com/81291367)
 
@@ -24,8 +24,26 @@ I also integrated the following parts I had laying around -
 
 Note - you probably wouldn't do poorly by following the original project more closely than I have - many of my changes actually have more to do with the parts I had available at the time (my local RadioShack isn't very well stocked). In particular, in future versions I plan to add buttons to control the blinds. I didn't have any buttons.
 
+### Arduino Code
+The code to upload to the Arduino [is located here](arduino-code.ino) (there's some great [example code here](https://gist.github.com/aurman/6546221)). You'll need to install the following libraries -
+
+- [SmartThings Arduino Library](http://build.smartthings.com/arduino/)
+- [Adafruit DHT11](https://github.com/adafruit/DHT-sensor-library) (optional, only needed if you're using the DHT11 temperature/humidity sensor)
+- [Servo Calibration from the Makezine project](http://grathio.com/assets/make/blind_minder_arduino.zip) - you'll want to calibrate the servo before doing anything else, or it will spin around with a mind of its own. That download also includes the original Arduino sketch - if you're following that build more closely, it may include handy information to talking to the components they use. 
+ 
+### SmartThings Device Type Code
+The code to use to create the device to [is located here](device-type.groovy) (based on this [SmartThings example code](https://gist.github.com/aurman/6862503)). The [SmartThings arduino page](http://build.smartthings.com/arduino/) has information on how to set up a device type in the IDE. 
+
+### Building It
+I'll assume that you can figure out how to hook up the individual components to the Arduino, and focus more on the specifics of my iPhone box build. Here's the basic setup –
+
+![1](images/1.jpg)
+
+As you can see, it's an iPhone 5S box attached to the wall (I recommend mounting [Command Strips](http://www.command.com/wps/portal/3M/en_US/NACommand/Command/) or something similar to avoid damaging the wall – of course if you don't live in an apartment and you can "damage" whatever you want, I'd recommend looking into [this sort of in-blinds build](https://homeawesomation.wordpress.com/2013/02/26/automated-window-blinds-with-arduino/)!). I've cut a hole in the top, and precariously screwed the servo into the box. The servo is then connected to the blinds with a rubber band (read [step 10 of the original article](http://makezine.com/projects/mini-blind-minder/) for details on this slip clutch setup). 
+
+
 
 ### Thanks!
 
 - To the [original Makezine article](http://makezine.com/projects/mini-blind-minder/) that inspired the design
-- To the [SmartThings community](http://build.smartthings.com) site for helping me figure out the device handler and Arduino code 
+- To the [SmartThings community](http://build.smartthings.com) 
