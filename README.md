@@ -13,7 +13,7 @@ They offer a fantastic [SmartThings Arduino shield](https://shop.smartthings.com
 
 Since our version of the project will be controlled wirelessly, most of the parts needed for the original Makezine version aren't needed. You will need these items though -
 
-- [Continuous Rotation Servo](http://www.parallax.com/product/900-00008)
+- [Continuous Rotation Servo](http://www.parallax.com/product/900-00008) (be careful – I've recieved one of these where the wires were shorted inside due to bad soldering - you'll want to test thoroughly). 
 - Rubber Band – although I've had more success using hair elastics with one rubber side)
 - Project Case – I used an iPhone 5 box 
 
@@ -48,6 +48,10 @@ I cut another hole in the side for the photoresistor, and hot glued it in place.
 ### What's Next?
 
 I hope to continue improving the project by giving it a better case, and a better drive mechanism. So far no success with 3d printing parts in elasto plastic on Shapeways (not quite elastic enough), but I'll try to keep this repo updated as changes are made. 
+
+**Update:** While working on building another one of these, I discovered the second continuous rotation servo I ordered had its ground and power wires shorted together because a bad soldering job inside. This probably could have been repaired by someone good at soldering (yes, I tried. It could have gone better).
+
+I'm currently trying to get a new design together that doesn't use a servo, slip drive, or usb power. 
 
 ### Thanks!
 
